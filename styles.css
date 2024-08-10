@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #FFF8DC;
+    color: #15131A;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+.logo {
+    max-width: 200px;
+    height: auto;
+    margin-top: 20px;
+}
+
+main {
+    text-align: center;
+}
+
+h1 {
+    font-size: 26px;
+    margin-bottom: 11px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.first-text {
+    color: #565463;
+    margin: 0 20px;
+    background-color: #FFFFFF;
+    padding: 5px 25px;
+    border-radius: 25px;
+}
+
+.animation-container {
+    width: 100%;
+    height: 300px; /* Adjust the height as needed */
+    margin: 0 auto;
+    /* Add Lottie animation styling here */
+}
+
+.social-links {
+    margin-top: 50px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #565463; /* This will be overridden by icon color */
+    font-size: 24px; /* Increase size if needed */
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #A09FA8; /* Using one of your accent colors */
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0; 
+  color: #A09FA8;
+}
+
+
+@media (max-width: 768px) {
+    .logo {
+        max-width: 200px;
+    }
+
+    .animation-container {
+        width: 90%;
+        height: 250px;
+    }
+
+    .social-links a {
+        font-size: 42px;
+    }
+}
+
