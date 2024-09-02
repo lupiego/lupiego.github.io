@@ -3,5 +3,5 @@ var animation = bodymovin.loadAnimation({
     renderer: 'svg',
     loop: true,
     autoplay: true,
-    path: 'https://github.com/lupiego/lupiego.github.io/blob/175c4358ac14c3792b5f3a6e89f6ce1a862632da/img/lula.json',
+    path: 'https://raw.githubusercontent.com/lupiego/lupiego.github.io/main/img/lula.json',
 });
