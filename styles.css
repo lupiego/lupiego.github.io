@@ -53,22 +53,21 @@ p {
 
 .peixes {
   width: 100vw; /* Full viewport width */
-  height: 50vh; /* Full viewport height for a hero section */
-  background-image: url("https://raw.githubusercontent.com/lupiego/lupiego.github.io/main/img/peixes.svg");
-  background-size-x: 100%; /* Adjust the size as needed */
-  background-size-y: 100%; /* Adjust the size as needed */
-  background-position: center; /* Center the background */
-  background-repeat: repeat-x;
+  height: 700px; /* Adjust height to make it responsive */
+  background-image: linear-gradient(to top, rgba(255, 248, 220, 1) 0%, rgba(255, 248, 220, 0) 70%),
+        url("https://raw.githubusercontent.com/lupiego/lupiego.github.io/main/img/peixes.svg");
+  background-size: cover; /* Maintain proportions and cover the container */
+  background-repeat: repeat-x; /* Repeat the background horizontally */
   position: relative; /* Positioning context for the animation container */
-  animation: slidein 5s linear infinite backwards;
+  animation: slidein 30s linear infinite; /* Smooth sliding animation */
 }
 
 @keyframes slidein {
   from {
-    background-position: -100%;
+    background-position-x: -1000px; /* Start from the right */
   }
   to {
-    packground-position: 100%;
+    background-position-x: 1000px; /* Move the background to the left smoothly */
   }
 }
 
@@ -81,7 +80,6 @@ p {
   left: 50%; /* Centers horizontally */
   bottom: 0; /* Sticks to the bottom */
   transform: translateX(-50%); /* Centers horizontally */
-  /* Add Lottie animation styling here */
 }
 
 .social-links {
@@ -117,6 +115,10 @@ footer {
     max-width: 150px;
     padding-top: 20px;
   }
+
+    .peixes {
+    height: 400px;
+    }
 
   .animation-container {
     width: 90%;
