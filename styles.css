@@ -59,15 +59,15 @@ p {
   background-size: cover; /* Maintain proportions and cover the container */
   background-repeat: repeat-x; /* Repeat the background horizontally */
   position: relative; /* Positioning context for the animation container */
-  animation: slidein 30s linear infinite; /* Smooth sliding animation */
+  animation: slidein 120s linear infinite; /* Smooth sliding animation */
 }
 
 @keyframes slidein {
   from {
-    background-position-x: -1000px; /* Start from the right */
+    background-position-x: -4000px; /* Start from the right */
   }
   to {
-    background-position-x: 1000px; /* Move the background to the left smoothly */
+    background-position-x: 4000px; /* Move the background to the left smoothly */
   }
 }
 
@@ -127,5 +127,12 @@ footer {
 
   .social-links a {
     font-size: 42px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .peixes {
+    height: 800px;
+    background-size: contain;
   }
 }
