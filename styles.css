@@ -1,82 +1,104 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Nunito', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #FFF8DC;
-    color: #15131A;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #fff8dc;
+  color: #15131a;
 }
 
 header {
-    align-items: center;
-    margin-bottom: 20px;
-    padding-top: 20px;
-    position: relative;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  position: relative;
 }
 
 .logo {
-    max-width: 150px;
-    height: auto;
-    margin-top: 20px;
+  max-width: 150px;
+  height: auto;
+  margin-top: 20px;
 }
 
 main {
-    text-align: center;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 h1 {
-    font-size: 26px;
-    margin-bottom: 11px;
+  font-size: 26px;
+  margin-bottom: 11px;
 }
 
 p {
-    font-size: 16px;
-    margin-bottom: 20px;
+  font-size: 16px;
+  margin-bottom: 20px;
 }
 
 .first-text {
-    color: #565463;
-    margin: 0 20px;
-    background-color: #FFFFFF;
-    padding: 5px 25px;
-    border-radius: 25px;
+  color: #565463;
+  margin: 0 20px;
+  background-color: #ffffff;
+  padding: 5px 25px;
+  border-radius: 25px;
 }
 
-.animations {
-    background-image: url("img/peixes.svg");
+.peixes {
+  width: 100vw; /* Full viewport width */
+  height: 50vh; /* Full viewport height for a hero section */
+  background-image: url("https://raw.githubusercontent.com/lupiego/lupiego.github.io/main/img/peixes.svg");
+  background-size-x: 100%; /* Adjust the size as needed */
+  background-size-y: 100%; /* Adjust the size as needed */
+  background-position: center; /* Center the background */
+  background-repeat: repeat-x;
+  position: relative; /* Positioning context for the animation container */
+  animation: slidein 5s linear infinite backwards;
+}
+
+@keyframes slidein {
+  from {
+    background-position: -100%;
+  }
+  to {
+    packground-position: 100%;
+  }
 }
 
 .animation-container {
-    width: 100%;
-    height: 300px; /* Adjust the height as needed */
-    margin: 0 auto;
-    /* Add Lottie animation styling here */
+  width: 100%;
+  max-width: 600px; /* Adjust the width as needed */
+  height: 300px; /* Adjust the height as needed */
+  margin: 0 auto;
+  position: absolute; /* Positioned relative to the .peixes container */
+  left: 50%; /* Centers horizontally */
+  bottom: 0; /* Sticks to the bottom */
+  transform: translateX(-50%); /* Centers horizontally */
+  /* Add Lottie animation styling here */
 }
 
 .social-links {
-    margin-top: 50px;
-    margin-bottom: 20px;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 
 .social-links a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #565463; /* This will be overridden by icon color */
-    font-size: 24px; /* Increase size if needed */
-    transition: color 0.3s ease;
+  margin: 0 10px;
+  text-decoration: none;
+  color: #565463; /* This will be overridden by icon color */
+  font-size: 24px; /* Increase size if needed */
+  transition: color 0.3s ease;
 }
 
 .social-links a:hover {
-    color: #A09FA8; /* Using one of your accent colors */
+  color: #a09fa8; /* Using one of your accent colors */
 }
 
 footer {
@@ -85,25 +107,23 @@ footer {
   bottom: 0;
   width: 100%;
   text-align: center;
-  padding: 10px 0; 
-  color: #A09FA8;
-    background-color: #FFF8DC;
+  padding: 10px 0;
+  color: #a09fa8;
+  background-color: #fff8dc;
 }
-
 
 @media (max-width: 768px) {
-    .logo {
-        max-width: 150px;
-        padding-top: 20px;
-    }
+  .logo {
+    max-width: 150px;
+    padding-top: 20px;
+  }
 
-    .animation-container {
-        width: 90%;
-        height: 250px;
-    }
+  .animation-container {
+    width: 90%;
+    height: 250px;
+  }
 
-    .social-links a {
-        font-size: 42px;
-    }
+  .social-links a {
+    font-size: 42px;
+  }
 }
-
