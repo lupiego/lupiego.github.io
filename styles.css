@@ -25,13 +25,14 @@ header {
 }
 
 main {
-  text-align: center;
+  text-align: center; /* Optional: keeps text aligned in the center */
   flex: 1;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column; /* Keep the elements in a vertical column */
+  align-items: center; /* Aligns the items to the start (left by default) */
+  justify-content: flex-start; /* Stacks items from the top down */
 }
+
 
 h1 {
   font-size: 26px;
@@ -53,7 +54,7 @@ p {
 
 .peixes {
   width: 100vw; /* Full viewport width */
-  height: 700px; /* Adjust height to make it responsive */
+  height: 600px; /* Adjust height to make it responsive */
   background-image: linear-gradient(to top, rgba(255, 248, 220, 1) 0%, rgba(255, 248, 220, 0) 70%),
         url("https://raw.githubusercontent.com/lupiego/lupiego.github.io/main/img/peixes.svg");
   background-size: cover; /* Maintain proportions and cover the container */
