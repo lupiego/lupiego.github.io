@@ -35,8 +35,13 @@ main {
 
 
 h1 {
-  font-size: 26px;
+  font-family: "ff-providence-sans-web-pro", sans-serif;font-weight: 400;font-style: normal;
+  font-size: 32px;
   margin-bottom: 11px;
+}
+
+h1 > strong {
+  font-weight: 700;
 }
 
 p {
@@ -54,7 +59,7 @@ p {
 
 .peixes {
   width: 100vw; /* Full viewport width */
-  height: 600px; /* Adjust height to make it responsive */
+  height: 500px; /* Adjust height to make it responsive */
   background-image: linear-gradient(to top, rgba(255, 248, 220, 1) 0%, rgba(255, 248, 220, 0) 70%),
         url("https://raw.githubusercontent.com/lupiego/lupiego.github.io/main/img/peixes.svg");
   background-size: cover; /* Maintain proportions and cover the container */
@@ -133,7 +138,7 @@ footer {
 
 @media (min-width: 1700px) {
   .peixes {
-    height: 800px;
+    height: 600px;
     background-size: contain;
   }
 }
